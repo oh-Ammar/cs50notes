@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CS50 Notes</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul>
+                <li>
+                    <a href="welcome.php" target="iframe_a" class="active">Home</a>
+                    <a href="notes/week0.html" target="iframe_a">Week 0 - Notes</a>
+                    <a href="#">Week 1 - Notes</a>
+                    <a href="#">Week 2 - Notes</a>
+                    <a href="#">Week 3 - Notes</a>
+                    <a href="#">Week 4 - Notes</a>
+                    <a href="#">Week 5 - Notes</a>
+                    <a href="#">Week 6 - Notes</a>
+                    <a href="#">Week 7 - Notes</a>
+                    <a href="#">Week 8 - Note</a>
+                    <a href="#">Week 9 - Notes</a>
+                    <a href="#">Week 10 - Notes</a>
+                    <a href="#">Cybersecurity</a>
+                    <a href="#">Seminars</a>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <iframe frameBorder="0" src="welcome.html" name="iframe_a">
+
+            </iframe>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('a').click(function() {
+            $("a.active").removeClass("active");
+            $(this).addClass('active')});
+        });
+    </script>
+</body>
+</html>
